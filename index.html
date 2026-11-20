@@ -31,29 +31,14 @@
       }
 
       .brand {
-        display: inline-flex;
-        flex-direction: column;
         align-self: flex-start;
-        line-height: 1;
-        text-decoration: none;
       }
 
-      .brand-name {
-        font-size: clamp(31px, 3.1vw, 47px);
-        font-style: italic;
-        font-weight: 700;
-        letter-spacing: -.07em;
-      }
-
-      .brand-name span:first-child { color: #30358c; }
-      .brand-name span:last-child { color: #079951; }
-
-      .brand-caption {
-        margin-top: 7px;
-        color: #5b6766;
-        font-size: 10px;
-        letter-spacing: .27em;
-        text-transform: uppercase;
+      .brand-logo {
+        display: block;
+        width: clamp(200px, 16vw, 250px);
+        height: auto;
+        mix-blend-mode: multiply;
       }
 
       main {
@@ -166,9 +151,10 @@
   <body>
     <div class="page">
       <div class="content">
-        <div class="brand" aria-label="Sleepcare medicated mattress">
-          <div class="brand-name"><span>Sleep</span><span>care</span></div>
-          <div class="brand-caption">Medicated mattress</div>
+        <div class="brand">
+          <svg class="brand-logo" viewBox="140 400 1720 650" role="img" aria-label="Premium Sleepcare medicated mattress">
+            <image href="sleepcare-logo.png" width="2000" height="1414" />
+          </svg>
         </div>
 
         <main>

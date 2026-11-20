@@ -84,13 +84,18 @@
         line-height: 1.65;
       }
 
+      .contact-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 37px;
+      }
+
       .contact {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        align-self: flex-start;
         min-height: 54px;
-        margin-top: 37px;
         padding: 0 26px;
         border-radius: 4px;
         background: #174f50;
@@ -161,7 +166,11 @@
           <p class="status">Our new website is on its way</p>
           <h1>Rest easy.<br />We're almost here.</h1>
           <p class="intro">A new online home for Sleepcare is coming soon. Have a question in the meantime? We'd love to hear from you.</p>
-          <a class="contact" href="mailto:barzatrading@gmail.com?subject=Sleepcare%20enquiry">Email us</a>
+          <div class="contact-links">
+            <a class="contact" href="https://wa.me/919207064444" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a class="contact" href="tel:+919207064444">Call</a>
+            <a class="contact" href="mailto:barzatrading@gmail.com?subject=Sleepcare%20enquiry">Email us</a>
+          </div>
         </main>
 
         <footer>Sleepcare by Barza Trading Co.</footer>
